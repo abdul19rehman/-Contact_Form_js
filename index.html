@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title> Contact form</title>
+</head>
+
+<body class="bg-greenLight">
+  <div class="form-content bg-white md:max-w-xl  flex   md:flex-col mx-auto p-5 mt-5">
+    <form class="form">
+      <!-- heading -->
+      <h1 class="text-darkGreen font-sans font-semibold text-md">Contact us</h1>
+      <!-- fname and lname -->
+      <div class="names flex flex-col md:flex-row w-full gap-5 mt-2">
+        <div class=" w-full md:w-1/2">
+          <!-- fname -->
+          <p class="text-greenMedium text-sm ">First Name <span class="text-greenMedium">*</span> </p>
+          <!-- fname input -->
+          <input type="text" name="name" class="fname border-2 mt-2 border-greenLight  rounded-lg  py-1 w-full">
+          <!-- error message -->
+          <p class=" error-msg-fname text-Red mt-2 text-sm hidden">This feild is required </p>
+        </div>
+
+        <!-- Lastname div  -->
+        <div class=" w-full md:w-1/2 ">
+          <!-- lname -->
+          <p class="text-greenMedium text-sm">Last Name <span class="text-greenMedium">*</span></p>
+          <!-- lname input -->
+          <input type="text" name="name" class=" lname border-2 mt-2 border-greenLight rounded-lg w-full  py-1">
+          <!-- error message -->
+          <p class="error-msg-lname text-Red text-sm mt-2 hidden">This feild is required </p>
+        </div>
+      </div>
+      <!-- email -->
+      <div class=" w-full mt-2">
+        <!-- email text -->
+        <p class="text-greenMedium text-sm"> Email Address <span class="text-greenMedium">*</span></p>
+        <!-- email input -->
+        <input type="email" name="email" class=" email border-2 mt-2 border-greenLight rounded-lg w-full py-1">
+        <!-- error messgae -->
+        <p class="error-msg-email text-Red text-sm mt-2 hidden">This feild is required </p>
+      </div>
+     
+      <div class="query mt-2 ">
+        <p class="text-greenMedium text-sm"> Query Type <span class="text-greenMedium">*</span></p>
+
+
+        <div class="query-type text-sm w-full flex flex-col items-center justify-center md:flex-row gap-5">
+
+          <!-- radio btn -1  -->
+          <label for="radio-btn-1"
+            class="radio-btn-1 flex mt-1 gap-5 border border-greenLight h-8 justify-center items-center px-5 text-xs text-greenMedium w-full md:w-1/2  rounded-lg"><input
+              type="radio" id="radio-btn-1" name="query">
+            General Enquiry</label>
+
+          <!-- radio btn-2 -->
+          <label for="radio-btn-2"
+            class=" radio-btn-2 flex  gap-5 border border-greenLight h-8 justify-center items-center px-5 text-xs text-greenMedium w-full md:w-1/2 rounded-lg"><input
+              type="radio" id="radio-btn-2" name="query">
+            Support Request</label>
+
+        </div>
+        <!-- error message query -->
+        <p class="error-msg-query text-Red text-sm mt-2 hidden">Please select a query type </p>
+        <div class="message mt-2">
+          <!-- HTML -->
+          <!-- message -->
+          <p class="text-greenMedium text-sm"> Message<span class="text-greenMedium">*</span></p>
+          <!-- message box -->
+          <textarea rows="4" cols="50" name="comment" form="usrform"
+            class="message-box w-full mt-2 rounded-lg border-2 border-greenLight" id="textarea">
+          </textarea>
+        </div>
+        <!-- error message -->
+        <p class="msg-error text-Red text-sm mt-2 hidden">This field is required</p>
+
+        <!-- check box -->
+        <div class=" flex flex-row gap-5 mt-2">
+          <input type="checkbox" class="checkbox">
+          <!-- consent para -->
+          <p class="text-greenMedium text-sm"> I consent to being contacted by the team <span
+              class="text-greenMedium consent">*</span>
+          </p>
+        </div>
+        <!-- error msg checked -->
+        <p class="error-msg-consent text-Red text-sm mt-2 hidden"> To submit this form, please consent to being
+          contacted
+        </p>
+        <!-- submit button -->
+        <div class="submit-btn mt-2">
+          <button class="submit bg-greenMedium w-full py-2 text-white rounded-lg text-center">Submit</button>
+        </div>
+
+      </div>
+  </div>
+  </div>
+
+
+  </form>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
